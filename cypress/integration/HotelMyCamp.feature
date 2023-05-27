@@ -1,4 +1,5 @@
 Feature: Login Test
+@smoke
 Scenario: TC 01
 Given HotelMyCamp sayfasina git
 Then Login butonuna bas

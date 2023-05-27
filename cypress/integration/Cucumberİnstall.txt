@@ -29,3 +29,17 @@ import { Given,And,Then,When } from "cypress-cucumber-preprocessor/steps";
 
 ****feature file dosya ismiyle stepdefinition dosya ismi
 aynı olmak zorunda
+
+TESTLERİ Calıstırma
+butun testlerı calıstırma
+./node_modules/.bin/cypress run
+
+tagı smoke olanları calıstırma
+./node_modules/.bin/cypress-tags run -e TAGS='@smoke'
+
+tagı smoke olanlar hariç hepsini çalıştırma
+./node_modules/.bin/cypress-tags run -e TAGS='not @smoke'
+
+windowsta hata alındıgında once alttakı kodu calıstır
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
